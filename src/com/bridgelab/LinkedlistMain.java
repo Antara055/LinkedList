@@ -10,6 +10,9 @@ public class LinkedlistMain {
       //Add Data at tail or end in linked list
         System.out.println("Append Nodes");
         LinkedlistOparation.append();
+      //Add data in between
+        System.out.println("Insert in between");
+        LinkedlistOparation.insert();
     }
 }
     class Node {

@@ -3,7 +3,7 @@ package com.bridgelab;
 public class LinkedList {
     Node head, tail;
 
-    public void addToBegin(int data) {
+    public void push(int data) {
         Node nnode = new Node(data);
         if (head == null) {
             head = tail = nnode;
@@ -22,6 +22,16 @@ public class LinkedList {
             Node temp = tail;
             this.tail = nnode;
             temp.next = nnode;
+        }
+
+    }
+    public void insertNode(Node prev_node,int data) {
+        if (prev_node == null) {
+            System.out.println("Previous node cannot be Null");
+        } else {
+            Node nnode = new Node(data);
+            nnode.next=prev_node.next;
+            prev_node.next=nnode;
         }
 
     }
