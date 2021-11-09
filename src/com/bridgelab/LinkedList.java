@@ -43,6 +43,14 @@ public class LinkedList {
 
         }
     }
+    public void lastpop() {
+        Node temp = head;
+        while (!temp.next.equals(tail)) {
+            temp = temp.next;
+        }
+        this.tail = temp;
+        temp.next = null;
+    }
 
     public void displayList() {
         if (head == null) {
@@ -55,4 +63,6 @@ public class LinkedList {
             }
         }
     }
+
+
 }

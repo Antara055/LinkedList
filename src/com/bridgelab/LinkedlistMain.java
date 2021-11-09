@@ -14,8 +14,11 @@ public class LinkedlistMain {
         System.out.println("Insert in between");
         LinkedlistOparation.insert();
       //Delete first element
-        System.out.println("Delete from begining");
+        System.out.println("Delete first element");
         LinkedlistOparation.deleteFirst();
+      //Delete last element
+        System.out.println("Delete last element");
+        LinkedlistOparation.deleteLast();
     }
 }
     class Node {
