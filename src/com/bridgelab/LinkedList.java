@@ -14,6 +14,17 @@ public class LinkedList {
         }
 
     }
+    public void append(int data) {
+        Node nnode = new Node(data);
+        if (head == null) {
+            head = tail = nnode;
+        } else {
+            Node temp = tail;
+            this.tail = nnode;
+            temp.next = nnode;
+        }
+
+    }
 
     public void displayList() {
         if (head == null) {
@@ -21,7 +32,7 @@ public class LinkedList {
         } else {
             Node temp = head;
             while (temp != null) {
-                System.out.print(temp.data + " ");
+                System.out.println(temp.data + " ");
                 temp = temp.next;
             }
         }
