@@ -25,5 +25,14 @@ public class LinkedlistOparation {
         list.insertNode(list.head,30);
         list.displayList();
     }
+    //delete data from first
+    public static void deleteFirst(){
+        LinkedList list=new LinkedList();
+        list.push(70);
+        list.push(30);
+        list.push(56);
+        list.pop();
+        list.displayList();
+    }
 
 }

@@ -13,6 +13,9 @@ public class LinkedlistMain {
       //Add data in between
         System.out.println("Insert in between");
         LinkedlistOparation.insert();
+      //Delete first element
+        System.out.println("Delete from begining");
+        LinkedlistOparation.deleteFirst();
     }
 }
     class Node {

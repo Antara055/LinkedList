@@ -35,6 +35,14 @@ public class LinkedList {
         }
 
     }
+    public void pop(){
+        if (this.head != null) {
+            Node temp = this.head;
+            this.head = this.head.next;
+            temp = null;
+
+        }
+    }
 
     public void displayList() {
         if (head == null) {
