@@ -103,7 +103,6 @@ public class LinkedList {
     public void deleteNode(int data) {
         if (this.head == null) {
             System.out.println("List is Empty");
-            return;
         }
         Node tempNode = head;
         while (tempNode.next.data != data) {
@@ -113,4 +112,27 @@ public class LinkedList {
         Node nextNode = tempNode.next.next;
         previousNode.next = nextNode;
     }
+
+    public void sort() {
+        Node startingNode = head;
+        Node index = null;
+        if (this.head == null) {
+            System.out.println("List is Empty");
+        }
+        else{
+            while (startingNode!=null){
+                index=startingNode.next;
+                while (index!=null){
+                    if(startingNode.data > index.data) {
+                    int temp = startingNode.data;
+                    startingNode.data = index.data;
+                    index.data = temp;
+                }
+                index = index.next;
+            }
+            startingNode = startingNode.next;
+            }
+        }
+    }
 }
+

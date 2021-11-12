@@ -26,8 +26,11 @@ public class LinkedlistMain {
         System.out.println("Insert Element");
         LinkedlistOparation.insertDataInMentionedNode();
         //Delete Data from mentioned position in linked list
-        System.out.println("Delete Element");
+        System.out.println("Delete Element(40)");
         LinkedlistOparation.deleteDataFromMentionedNode();
+        //Sort linked list
+        System.out.println("Sort List");
+        LinkedlistOparation.sortList();
     }
 }
 class Node {

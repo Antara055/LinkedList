@@ -60,7 +60,7 @@ public class LinkedlistOparation {
         list.insertNode(list.head.next, 40);
         list.displayList();
     }
-
+    //delete data from mentioned position
     public static void deleteDataFromMentionedNode() {
         LinkedList list = new LinkedList();
         list.push(70);
@@ -71,6 +71,20 @@ public class LinkedlistOparation {
         list.displayList();
         list.deleteNode(40);
         System.out.println("after deleting the element the list is");
+        list.displayList();
+    }
+    //sorting the list
+    public static void sortList() {
+        LinkedList list = new LinkedList();
+        list.push(70);
+        list.push(30);
+        list.push(56);
+        list.push(40);
+        System.out.println("Before sorting");
+        list.displayList();
+        System.out.println();
+        list.sort();
+        System.out.println("After Sorting");
         list.displayList();
     }
 }
