@@ -22,6 +22,9 @@ public class LinkedlistMain {
         //Searching node by value
         System.out.println("Value(30) searhing");
         LinkedlistOparation.sechValue();
+        //insert data at mentioned position
+        System.out.println("Insert Element");
+        LinkedlistOparation.insertDataInMentionedNode();
     }
 }
 class Node {

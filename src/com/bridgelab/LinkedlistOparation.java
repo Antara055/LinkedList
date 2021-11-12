@@ -51,7 +51,13 @@ public class LinkedlistOparation {
         list.push(56);
         list.search(30);
     }
-
-
-
+    //insert data at mentioned position
+    public static void insertDataInMentionedNode() {
+        LinkedList list = new LinkedList();
+        list.push(70);
+        list.push(30);
+        list.push(56);
+        list.insertNode(list.head.next, 40);
+        list.displayList();
+    }
 }

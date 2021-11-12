@@ -27,7 +27,7 @@ public class LinkedList {
         }
 
     }
-//inserting data middle of Linkedlist
+//inserting data at mentioned position of Linkedlist
 
     public void insertNode(Node prev_node,int data) {
         if (prev_node == null) {
