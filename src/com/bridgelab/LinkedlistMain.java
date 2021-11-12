@@ -25,6 +25,9 @@ public class LinkedlistMain {
         //insert data at mentioned position
         System.out.println("Insert Element");
         LinkedlistOparation.insertDataInMentionedNode();
+        //Delete Data from mentioned position in linked list
+        System.out.println("Delete Element");
+        LinkedlistOparation.deleteDataFromMentionedNode();
     }
 }
 class Node {

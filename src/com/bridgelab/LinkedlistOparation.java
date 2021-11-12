@@ -60,4 +60,17 @@ public class LinkedlistOparation {
         list.insertNode(list.head.next, 40);
         list.displayList();
     }
+
+    public static void deleteDataFromMentionedNode() {
+        LinkedList list = new LinkedList();
+        list.push(70);
+        list.push(30);
+        list.push(40);
+        list.push(56);
+        System.out.println("before deleting the element the list is");
+        list.displayList();
+        list.deleteNode(40);
+        System.out.println("after deleting the element the list is");
+        list.displayList();
+    }
 }
